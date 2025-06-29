@@ -14,8 +14,3 @@ def time_spent_on_domain(domain: str, hours=24) -> int:
             time_spent += 300 # rough estimate: 4 mins per visit
             print(f"Time spent on {title}: {timestamp} {url}")
     return time_spent
-
-if __name__ == "__main__":
-    domain = "app.solaro.com"
-    seconds = time_spent_on_domain(domain)
-    print(f"Estimated time spent on {domain}: {seconds // 60} mins ({seconds} seconds)")
