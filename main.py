@@ -1,6 +1,7 @@
 import time
 import json
 import os
+import psutil
 from blocker import block_app
 from active_tracker import run_active_tracker
 import threading
